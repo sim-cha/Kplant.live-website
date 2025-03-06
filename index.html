@@ -96,14 +96,14 @@
     }
     .floating-embedded-youtube iframe {
       display: block;
-      width: 320px;
-      height: 180px;
+      width: 560px;
+      height: 315px;
     }
     /* Responsive adjustments for smaller screens */
-    @media (max-width: 400px) {
+    @media (max-width: 600px) {
       .floating-embedded-youtube iframe {
-         width: 280px;
-         height: 157px;
+        width: 100%;
+        height: auto;
       }
     }
   </style>
@@ -111,11 +111,7 @@
 <body>
   <!-- Floating Embedded YouTube Playlist -->
   <div class="floating-embedded-youtube">
-    <iframe src="https://www.youtube.com/embed/videoseries?list=PL1FDPPmexur-oKkNNi0G67YnScfCuP5jU" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=4NyJ4Fy-p94FMhRQ&amp;list=PL1FDPPmexur-oKkNNi0G67YnScfCuP5jU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   
   <!-- Main Content Container -->
