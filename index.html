@@ -1,137 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to KPlant Live</title>
-    <style>
-        /* General Page Styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-
-        /* Main Content Styling */
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #2c3e50;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-top: 15px;
-        }
-
-        /* Button Styling */
-        .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-        /* Contact Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-textarea {
-    resize: none;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to KPlant Live</title>
+  <style>
+    /* General Page Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+    /* Main Content Styling */
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 20px auto 0;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-top: 15px;
+    }
+    /* Main Button Styling */
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    /* Contact Form Styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    textarea {
+      resize: none;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    /* Floating Embedded YouTube Playlist */
+    .floating-embedded-youtube {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      border: 2px solid green;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      z-index: 1000;
+    }
+    .floating-embedded-youtube iframe {
+      display: block;
+      width: 320px;
+      height: 180px;
+    }
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 400px) {
+      .floating-embedded-youtube iframe {
+         width: 280px;
+         height: 157px;
+      }
+    }
+  </style>
 </head>
 <body>
-<a href="https://www.youtube.com/playlist?list=PL1FDPPmexur-oKkNNi0G67YnScfCuP5jU" class="floating-top-right-button" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
-</a>
-
-<style>
-    .floating-top-right-button {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background-color: white;
-        padding: 10px;
-        border-radius: 50%;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .floating-top-right-button img {
-        width: 50px;
-        height: auto;
-    }
-
-    .floating-top-right-button:hover {
-        transform: scale(1.1);
-    }
-</style>
-
-    <div class="container">
-        <h1>Welcome to KPlant.Live</h1>
-        <img src="https://github.com/sim-cha/Kplant/blob/main/WhatsApp%20Image%202025-02-26%20at%209.04.06%20PM.jpeg?raw=true" alt="Landing Page Image">
-        <p>Next lecture B”H 3/18/25.</p>
-        <a href="https://kplant.org" class="btn">Kplant.org</a>
-        <h2>Contact Us</h2>
-<form action="https://formspree.io/f/xgvawvwy" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="_replyto" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-    <button type="submit">Send Message</button>
-</form>
-
-    </div>
-
+  <!-- Floating Embedded YouTube Playlist -->
+  <div class="floating-embedded-youtube">
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PL1FDPPmexur-oKkNNi0G67YnScfCuP5jU" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </div>
+  
+  <!-- Main Content Container -->
+  <div class="container">
+    <h1>Welcome to KPlant.Live</h1>
+    <img src="https://github.com/sim-cha/Kplant/blob/main/WhatsApp%20Image%202025-02-26%20at%209.04.06%20PM.jpeg?raw=true" alt="Landing Page Image">
+    <p>Next lecture B”H 3/18/25.</p>
+    <a href="https://kplant.org" class="btn">Kplant.org</a>
+    
+    <!-- Contact Form -->
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xgvawvwy" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </body>
 </html>
