@@ -14,6 +14,28 @@
       padding: 50px;
       margin: 0;
     }
+    /* Floating Video Links (Top-Right) */
+    .floating-video-links {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #fff;
+      border: 2px solid green;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    .floating-video-links a {
+      display: block;
+      margin-bottom: 8px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    .floating-video-links a:last-child {
+      margin-bottom: 0;
+    }
     /* Main Content Styling */
     .container {
       max-width: 600px;
@@ -82,36 +104,13 @@
     button:hover {
       background-color: #0056b3;
     }
-    /* Floating Embedded YouTube Playlist */
-    .floating-embedded-youtube {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      border: 2px solid green;
-      border-radius: 5px;
-      background-color: white;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-      padding: 5px;
-      z-index: 1000;
-    }
-    .floating-embedded-youtube iframe {
-      display: block;
-      width: 560px;
-      height: 315px;
-    }
-    /* Responsive adjustments for smaller screens */
-    @media (max-width: 600px) {
-      .floating-embedded-youtube iframe {
-        width: 100%;
-        height: auto;
-      }
-    }
   </style>
 </head>
 <body>
-  <!-- Floating Embedded YouTube Playlist -->
-  <div class="floating-embedded-youtube">
-    <iframe width="360" height="120" src="https://www.youtube.com/embed/videoseries?si=4NyJ4Fy-p94FMhRQ&amp;list=PL1FDPPmexur-oKkNNi0G67YnScfCuP5jU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <!-- Floating Video Links (Top-Right) -->
+  <div class="floating-video-links">
+    <a href="https://youtu.be/qik2isOOqi8" target="_blank">Video 1 of 3</a>
+    <a href="https://youtu.be/vU10_ubgiCk" target="_blank">Video 2 of 3</a>
   </div>
   
   <!-- Main Content Container -->
